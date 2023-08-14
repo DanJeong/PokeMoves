@@ -22,6 +22,7 @@ async function getMove(num){
 
 async function createRow(move){
     let {"id":num, "name":name, "type":{name:type}, "power":dmg, "accuracy":acc, "damage_class":{name:category} } = move;//grabbing elements from json
+    name = name.split('--')[0];
     name = name.replace('-',' ')
         .split(' ')
         .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
