@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pokémon Moves</title>
+    <meta name="description" content="Searchable List of Pokemon Moves">
+    <link rel="icon" type="image/png" href="images/pokeball.png">
+
+    <script src="PokeMoves.js"></script>
+    <link rel="stylesheet" href="PokeMoves.css">
+</head>
+<body>
+    <div class="center-div">
+        <div>
+            <img id='pokeball' src="images/pokeball.png" alt="Pokeball">
+        </div>
+        <div>
+            <h1 class="header-text">PokéMoves</h1>
+        </div>
+    </div>
+    
+    <div class="center-div">
+        <input type="text" id="moveSearch" onkeyup="updateList()" placeholder="Search a move name...">
+    </div>
+
+    <div class="center-div">
+        <table id="moveList">
+            <tr id="table-header">
+                <th>Name</th>
+                <th>Type</th>
+                <th>Damage</th>
+                <th>Accuracy</th>
+                <th>Category</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
