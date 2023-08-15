@@ -99,19 +99,33 @@ html *{
     background-color: transparent;
 }
 
-#moveSearch{
-    width:50%;
+#moveSearch {
+    width: 100%;
     border: 1px solid #ddd;
+    margin-bottom: 12px;
 }
 
 #moveList {
     padding: 0;
     margin: 0;
+    border: 2px solid black;
+    border-radius: 4px;
+    border-collapse: collapse;
+    position: relative;
 }
 
-th{
+#table-div {
+    display: inline-grid;
+}
+
+th {
     padding: 0 20px;
     margin: 0 15px;
+    border: 1px solid black;
+}
+
+tr {
+    border: 1px solid gray;
 }
 
 td {
